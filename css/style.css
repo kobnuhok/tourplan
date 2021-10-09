@@ -372,6 +372,26 @@ template {
   padding-bottom: 40px;
 }
 
+.header-deals {
+  background-color: #19385c;
+  color: #fff;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 80px;
+}
+
+.header li a {
+  text-decoration: none;
+  color: white;
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,6 +410,16 @@ template {
 }
 
 .profile {
+  width: 110px;
+  height: 40px;
+}
+
+.profile img {
+  padding-right: 10px;
+}
+
+.profile a {
   text-decoration: none;
   border-bottom: none;
+  color: black;
 }
