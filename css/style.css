@@ -402,6 +402,7 @@ template {
 .search__input {
   width: 350px;
   height: 40px;
+  background-color: #f5fafea6;
 }
 
 .search__button {
