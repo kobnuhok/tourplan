@@ -7,6 +7,7 @@
 		padding-top: 40px
 		padding-bottom: 40px
 	&-deals
+		background-size: 1440px 100%
 		background-color: #19385c
 		color: #fff
 		list-style-type: none
@@ -19,22 +20,41 @@
 			text-decoration: none
 			color: white
 .search
-	display: flex
 	position: relative
+	overflow: hidden
+	border-radius: 6px
+	height: 40px
 	&__input
 		width: 350px
 		height: 40px
+		padding-left: 23px
+		padding-right: 75px
 		background-color:#f5fafea6
+		size: 12px
+		line-height: 15px
+		color: #333333
+		border: none
 	&__button
 		position: absolute
-		background: red
+		top: 0
+		right: 0
+		width: 65px
+		height: 100%
+		background: $primary-color
+		border:none
+
+
 
 .profile
+	display: flex
+	align-items: center
 	width: 110px
 	height: 40px
+	text-decoration: none
 	img
-		padding-right: 10px;
+		padding-right: 18px;
 	a
-		text-decoration: none
 		border-bottom: none
-		color: black
+		color: $text-color
+		font-size: 14px
+		line-height: 18px
