@@ -17,6 +17,11 @@ body {
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -350,6 +355,10 @@ template {
   display: none;
 }
 
+.logo {
+  max-width: 177px;
+}
+
 .navbar {
   background-color: #ffff;
 }
@@ -363,14 +372,17 @@ template {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.navbar-deals {
+.navbar__deals {
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  padding: 31px 0;
+  font-size: 14px;
+  line-height: 18px;
 }
-.navbar-deals__item {
+.navbar__deals__item {
   text-decoration: none;
   color: white;
 }
@@ -418,4 +430,44 @@ template {
   color: #333333;
   font-size: 14px;
   line-height: 18px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .search {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 340px;
+  }
+
+  .navbar-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .navbar__deals {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .navbar__deals__item {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 90%;
+  }
+
+  .profile img {
+    padding-right: 5px;
+  }
 }
