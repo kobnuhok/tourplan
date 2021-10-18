@@ -353,6 +353,9 @@ template {
 .navbar {
   background-color: #ffff;
 }
+.navbar__menu {
+  background-color: #19385c;
+}
 .navbar-top {
   display: flex;
   align-items: center;
@@ -361,13 +364,10 @@ template {
   padding-bottom: 40px;
 }
 .navbar-deals {
-  background-size: 1440px 100%;
-  background-color: #19385c;
-  color: #fff;
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 80px;
 }
 .navbar-deals__item {
