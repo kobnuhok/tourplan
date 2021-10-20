@@ -4,6 +4,7 @@
 
 body {
   font-family: "Mulish", sans-serif;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -456,7 +457,9 @@ template {
   .search {
     margin-left: auto;
     margin-right: auto;
-    max-width: 340px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 .navbar-top {
@@ -495,12 +498,14 @@ template {
     border: none;
     background-color: #fff;
     cursor: pointer;
+    margin: 0;
   }
 
   .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
+    margin: 0;
   }
 
   .profile {
@@ -515,4 +520,20 @@ template {
   .logo {
     width: 99px;
   }
+}
+.breadcrumb-list {
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  padding: 18px 0;
+  margin: 0;
+  list-style: none;
+}
+.breadcrumb-list__item:not(:last-child)::after {
+  content: "/";
+  margin-right: 4px;
+}
+.breadcrumb-list__link {
+  text-decoration: none;
 }
