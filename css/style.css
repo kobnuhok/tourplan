@@ -11,6 +11,10 @@ body {
   margin: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Document
    ========================================================================== */
 /**
@@ -356,7 +360,7 @@ template {
 }
 
 .logo {
-  max-width: 177px;
+  width: 177px;
 }
 
 .navbar {
@@ -372,6 +376,9 @@ template {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.navbar-top__menu-button {
+  display: none;
+}
 .navbar__deals {
   list-style-type: none;
   display: flex;
@@ -382,7 +389,7 @@ template {
   font-size: 14px;
   line-height: 18px;
 }
-.navbar__deals__item {
+.navbar__deals-item {
   text-decoration: none;
   color: white;
 }
@@ -423,7 +430,7 @@ template {
   text-decoration: none;
 }
 .profile img {
-  padding-right: 18px;
+  padding-right: 5px;
 }
 .profile a {
   border-bottom: none;
@@ -442,25 +449,29 @@ template {
     max-width: 700px;
   }
 
+  .logo {
+    width: 132px;
+  }
+
   .search {
     margin-left: auto;
     margin-right: auto;
     max-width: 340px;
   }
-
-  .navbar-top {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .navbar__deals {
-    padding-top: 22px;
-    padding-bottom: 22px;
-  }
-  .navbar__deals__item {
-    font-size: 12px;
-    line-height: 15px;
-  }
 }
+.navbar-top {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.navbar__deals {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.navbar__deals__item {
+  font-size: 12px;
+  line-height: 15px;
+}
+
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
@@ -469,5 +480,39 @@ template {
 
   .profile img {
     padding-right: 5px;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+  .navbar-top__menu-button {
+    display: flex;
+    width: 16px;
+    height: 11px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
   }
 }
