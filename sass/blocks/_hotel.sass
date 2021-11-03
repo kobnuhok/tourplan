@@ -63,6 +63,7 @@
 	max-width: 728px
 	height: 450px
 	border-radius: 8px
+	overflow: hidden
 	&:after
 		content: ''
 		position: absolute
@@ -76,6 +77,7 @@
 		z-index: 1
 		border-radius: 8px
 .swiper
+	object-fit: cover
 	&-button
 		width: 30px
 		height: 30px
@@ -93,8 +95,9 @@
 			color: #ffffffe7
 			background-image: url(img/arrow-next.svg)
 	&-slide
-		& img
-			object-fit: contain
+		&__image
+			height: 100%
+			width: 100%
 .swiper-button-next:after
 	font-size: 30px
 .swiper-button-prev:after
@@ -162,6 +165,7 @@
 .map
 	width: 347px
 	height: 213px
-	background-color: blue
+	border-radius: 4px
+	overflow: hidden
 
 
