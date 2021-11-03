@@ -1,6 +1,7 @@
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     loop: true,
+    slidesPerView: 1,
 
     // If we need pagination
     pagination: {
@@ -12,9 +13,9 @@ const swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
+    effect: "cube",
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
     },
 });
